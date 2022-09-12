@@ -1,0 +1,16 @@
+import os
+os.chdir('/Users/максим/Desktop')
+# os.mkdir('papka') #создаю папу на рабочем столе
+os.chdir('/Users/максим/Desktop/papka')
+print(os.getcwd())
+f1 = open('text1.txt','w')
+f2 = open('text2.txt','w')
+f3 = open('text3.txt','w')
+os.rename('text1.txt','rename_1.txt')
+os.rename('text2.txt','rename_2.txt')
+os.rename('text3.txt','rename_3.txt')
+os.remove('rename_1.txt')
+os.remove('rename_2.txt')
+os.remove('rename_3.txt')
+os.chdir('/Users/максим/Desktop')
+os.rmdir('papka')
